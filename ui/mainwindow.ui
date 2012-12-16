@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>791</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0">
+     <widget class="QTabWidget" name="tabWidget">
+      <property name="currentIndex">
+       <number>-1</number>
+      </property>
+      <property name="tabsClosable">
+       <bool>true</bool>
+      </property>
+      <property name="movable">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>791</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu_Soubor">
+    <property name="title">
+     <string>&amp;Soubor</string>
+    </property>
+    <addaction name="action_New"/>
+    <addaction name="action_Open"/>
+    <addaction name="separator"/>
+    <addaction name="action_Save"/>
+    <addaction name="action_SaveAs"/>
+    <addaction name="separator"/>
+    <addaction name="action_Export"/>
+    <addaction name="separator"/>
+    <addaction name="action_Close"/>
+    <addaction name="action_Quit"/>
+   </widget>
+   <widget class="QMenu" name="menu_N_pov_da">
+    <property name="title">
+     <string>&amp;Nápověda</string>
+    </property>
+    <addaction name="action_About"/>
+   </widget>
+   <addaction name="menu_Soubor"/>
+   <addaction name="menu_N_pov_da"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar">
+   <property name="sizeGripEnabled">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QToolBar" name="toolBar">
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <property name="toolButtonStyle">
+    <enum>Qt::ToolButtonIconOnly</enum>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="action_New"/>
+   <addaction name="action_Open"/>
+   <addaction name="action_Save"/>
+   <addaction name="separator"/>
+   <addaction name="action_Select"/>
+   <addaction name="separator"/>
+   <addaction name="action_Class"/>
+   <addaction name="action_Interface"/>
+   <addaction name="separator"/>
+   <addaction name="action_Asociation"/>
+   <addaction name="action_UniAsociation"/>
+   <addaction name="action_Generalization"/>
+   <addaction name="action_Agregation"/>
+   <addaction name="action_Composition"/>
+  </widget>
+  <action name="action_New">
+   <property name="text">
+    <string>&amp;Nový</string>
+   </property>
+   <property name="toolTip">
+    <string>Nový diagram</string>
+   </property>
+  </action>
+  <action name="action_Open">
+   <property name="text">
+    <string>&amp;Otevřít...</string>
+   </property>
+   <property name="toolTip">
+    <string>Otevřít</string>
+   </property>
+  </action>
+  <action name="action_Save">
+   <property name="text">
+    <string>&amp;Uložit</string>
+   </property>
+   <property name="toolTip">
+    <string>Uložit</string>
+   </property>
+  </action>
+  <action name="action_SaveAs">
+   <property name="text">
+    <string>Uložit &amp;jako...</string>
+   </property>
+  </action>
+  <action name="action_Export">
+   <property name="text">
+    <string>&amp;Exportovat...</string>
+   </property>
+   <property name="toolTip">
+    <string>Exportovat jako obrázek</string>
+   </property>
+  </action>
+  <action name="action_Close">
+   <property name="text">
+    <string>&amp;Zavřít</string>
+   </property>
+   <property name="toolTip">
+    <string>Zavřít aktuální soubor</string>
+   </property>
+  </action>
+  <action name="action_Quit">
+   <property name="text">
+    <string>&amp;Ukončit</string>
+   </property>
+   <property name="toolTip">
+    <string>Ukončit aplikaci</string>
+   </property>
+  </action>
+  <action name="action_Class">
+   <property name="icon">
+    <iconset resource="../res.qrc">
+     <normaloff>:/icons/class.png</normaloff>:/icons/class.png</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;Třída</string>
+   </property>
+   <property name="toolTip">
+    <string>Třída</string>
+   </property>
+  </action>
+  <action name="action_Select">
+   <property name="icon">
+    <iconset resource="../res.qrc">
+     <normaloff>:/icons/arrow.png</normaloff>:/icons/arrow.png</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;Vybrat</string>
+   </property>
+   <property name="toolTip">
+    <string>Vybrat</string>
+   </property>
+  </action>
+  <action name="action_Interface">
+   <property name="icon">
+    <iconset resource="../res.qrc">
+     <normaloff>:/icons/interface.png</normaloff>:/icons/interface.png</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;Rozhraní</string>
+   </property>
+   <property name="toolTip">
+    <string>Rozhraní</string>
+   </property>
+  </action>
+  <action name="action_Asociation">
+   <property name="icon">
+    <iconset resource="../res.qrc">
+     <normaloff>:/icons/association.png</normaloff>:/icons/association.png</iconset>
+   </property>
+   <property name="text">
+    <string>Asociace</string>
+   </property>
+   <property name="toolTip">
+    <string>Asociace</string>
+   </property>
+  </action>
+  <action name="action_Generalization">
+   <property name="icon">
+    <iconset resource="../res.qrc">
+     <normaloff>:/icons/generalisation.png</normaloff>:/icons/generalisation.png</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;Generalizace</string>
+   </property>
+   <property name="toolTip">
+    <string>Generalizace</string>
+   </property>
+  </action>
+  <action name="action_UniAsociation">
+   <property name="icon">
+    <iconset resource="../res.qrc">
+     <normaloff>:/icons/uniassociation.png</normaloff>:/icons/uniassociation.png</iconset>
+   </property>
+   <property name="text">
+    <string>Jednosměrná asociace</string>
+   </property>
+   <property name="toolTip">
+    <string>Jednosměrná asociace</string>
+   </property>
+  </action>
+  <action name="action_Agregation">
+   <property name="icon">
+    <iconset resource="../res.qrc">
+     <normaloff>:/icons/aggregation.png</normaloff>:/icons/aggregation.png</iconset>
+   </property>
+   <property name="text">
+    <string>Agregace</string>
+   </property>
+   <property name="toolTip">
+    <string>Agregace</string>
+   </property>
+  </action>
+  <action name="action_Composition">
+   <property name="icon">
+    <iconset resource="../res.qrc">
+     <normaloff>:/icons/composition.png</normaloff>:/icons/composition.png</iconset>
+   </property>
+   <property name="text">
+    <string>Kompozice</string>
+   </property>
+   <property name="toolTip">
+    <string>Kompozice</string>
+   </property>
+  </action>
+  <action name="action_About">
+   <property name="text">
+    <string>O programu</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="../res.qrc"/>
+ </resources>
+ <connections/>
+</ui>

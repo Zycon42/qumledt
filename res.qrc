@@ -1,0 +1,21 @@
+<RCC>
+  <qresource>
+    <file>icons/operation.png</file>
+    <file>icons/attribute.png</file>
+    <file>cursors/aggregation.png</file>
+    <file>cursors/association.png</file>
+    <file>cursors/class.png</file>
+    <file>cursors/composition.png</file>
+    <file>cursors/generalisation.png</file>
+    <file>cursors/interface.png</file>
+    <file>cursors/uniassociation.png</file>
+    <file>icons/uniassociation.png</file>
+    <file>icons/aggregation.png</file>
+    <file>icons/arrow.png</file>
+    <file>icons/association.png</file>
+    <file>icons/composition.png</file>
+    <file>icons/generalisation.png</file>
+    <file>icons/interface.png</file>
+    <file>icons/class.png</file>
+  </qresource>
+</RCC>
