@@ -1,4 +1,4 @@
-project(ITU_Proj)
+project(QUmlEdt)
 cmake_minimum_required(VERSION 2.6)
 find_package(Qt4 REQUIRED)
 
@@ -86,6 +86,6 @@ qt4_wrap_ui(UI_HDRS ${UIS})
 # run rcc
 qt4_add_resources(RESOURCES_RCC ${RESOURCES})
 
-add_executable(ITU_Proj ${SRCS} ${MOC_HDRS} ${UI_HDRS} ${RESOURCES_RCC})
+add_executable(${PROJECT_NAME} ${SRCS} ${MOC_HDRS} ${UI_HDRS} ${RESOURCES_RCC})
 
-target_link_libraries(ITU_Proj ${QT_LIBRARIES})
+target_link_libraries(${PROJECT_NAME} ${QT_LIBRARIES})
