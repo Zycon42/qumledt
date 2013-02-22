@@ -8,6 +8,6 @@ This project uses CMake build system.
 build
 -----
 
-$ mkdir build && cd build
-$ cmake ..
-$ make
+    $ mkdir build && cd build
+    $ cmake ..
+    $ make
